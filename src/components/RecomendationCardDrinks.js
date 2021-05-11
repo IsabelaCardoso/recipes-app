@@ -11,7 +11,6 @@ function RecomendationDrinkCard() {
   const [loadingRecomendation, setLoadingRecomendation] = useState(true);
   const type = Object.keys(detailsRecipe)[0];
   console.log('recomendations', recomendations.drinks);
-  // const recomendationsItens = Object.values(recomendations)[0];
 
   useEffect(() => {
     recipeRecomendationsAPI(type)
