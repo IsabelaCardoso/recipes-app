@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import RecipeContext from '../Context/Context';
 
 function Login() {
-//   const {} = useContext(RecipeContext);
   const [email, setEmail] = useState();
   const [password, setPassword] = useState('0');
 
@@ -36,6 +34,7 @@ function Login() {
         Senha
         <input
           placeholder="Password"
+          type="password"
           data-testid="password-input"
           onChange={ ({ target }) => setPassword(target.value) }
         />

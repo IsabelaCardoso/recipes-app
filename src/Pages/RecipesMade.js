@@ -6,7 +6,6 @@ function RecipesMade() {
   const { detailsRecipe } = useContext(RecipeContext);
   const [doneRecipes, setDoneRecipes] = useState([]);
   console.log(detailsRecipe);
-  // pegar do local storage o array de obj
   function getItemsFromStorage() {
     return JSON.parse(localStorage.getItem('doneRecipes'));
   }

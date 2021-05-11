@@ -19,10 +19,6 @@ function DetailsDrink() {
   const url = document.URL;
   const newUrlId = url.split('/')[4];
   const newUrlType = url.split('/')[3];
-  // const localStorageRecipes = JSON.parse(localStorage.getItem('inProgressRecipes'));
-  // const lengthIngredients = localStorageRecipes.cocktails[newUrlId].length
-  // console.log('loalstorage',localStorageRecipes.cocktails[newUrlId].length)
-  // console.log('ingredientes',detailsRecipe.drinks[0])
 
   useEffect(() => {
     recipeDetailsAPI(newUrlId, newUrlType)
@@ -33,13 +29,6 @@ function DetailsDrink() {
     return (<div>Loading...</div>);
   }
 
-  // function getLengthOfIngredients() {
-  //   const localStorageRecipes = JSON.parse(localStorage.getItem('inProgressRecipes'));
-  //   if (localStorageRecipes.cocktails[newUrlId].length === undefined) {
-  //     return 0
-  //   }
-  //   return localStorageRecipes.cocktails[newUrlId].length
-  // }
   const { strCategory,
     strDrink,
     strDrinkThumb,
@@ -51,7 +40,7 @@ function DetailsDrink() {
   const currentRecipe = {
     name: strDrink,
   };
-  // verifica se a página já carrega como favorito
+
   drinkDidMount(currentRecipe);
 
   const drink = detailsRecipe.drinks[0];
@@ -123,13 +112,6 @@ function DetailsDrink() {
           </button>
         </Link>
       )}
-      {/* { getLengthOfIngredients() > 0
-      ? drinkStateButton && <Link to={ `/bebidas/${newUrlId}/in-progress` }>
-        <button className="buttn-bottom" type="button" data-testid="start-recipe-btn">Iniciar receita</button>
-      </Link>
-      : drinkStateButton && <Link to={ `/bebidas/${newUrlId}/in-progress` }>
-      <button className="buttn-bottom" type="button" data-testid="start-recipe-btn">Continuar Receita</button>
-    </Link> } */}
     </div>
   );
 }
