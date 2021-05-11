@@ -6,7 +6,7 @@ O projeto a seguir foi desenvolvido em grupo durante o curso de formação em de
 
 O objetivo do projeto foi desenvolver um app de receitas utilizando o que há de mais moderno dentro do ecossistema React: Hooks e Context API!
 
-Nela é possível ver, buscar, filtrar, favoritar e acompanhar o processo de preparação de receitas e drinks!
+Nele é possível ver, buscar, filtrar, favoritar e acompanhar o processo de preparação de receitas e drinks!
 
 A base de dados serão 2 APIs distintas, uma para comidas e outra para bebidas.
 
